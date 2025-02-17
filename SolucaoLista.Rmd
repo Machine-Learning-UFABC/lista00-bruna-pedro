@@ -8,6 +8,7 @@ author: |
         | (Não é preciso informar os RAs)
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: pdf_document
+
 ---
 
 ```{r setup, include=FALSE}
@@ -33,7 +34,6 @@ x <- solve(A, b)
 print(x)
 
 ```
-
 
 ## Exercício 02
 ```{r}
@@ -75,7 +75,7 @@ ggplot(dados, aes(x = Angulo)) +
   scale_color_manual(values = c("Seno" = "blue", "Cosseno" = "red")) +
   labs(title = "Funções Seno e Cosseno", x = "Ângulo (radianos)", y = "Valor", color = "Função") +
   theme_bw() +
-  scale_x_continuous(breaks = seq(-2*pi, 2*pi, pi), labels = c("-2π", "-π", "0", "π", "2π"))
+  scale_x_continuous(breaks = seq(-2*pi, 2*pi, pi), labels = c("-2pi", "-pi", "0", "pi", "2pi"))
 ```
 
 ## Exercício 04
